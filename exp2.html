@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>HTML Tags Example</title>
+
+    <style>
+        body {
+            font-family: 'Segoe UI', sans-serif;
+            background: linear-gradient(to right, #74ebd5, #9face6);
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            width: 80%;
+            margin: 30px auto;
+            background: white;
+            padding: 25px;
+            border-radius: 12px;
+            box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+        }
+
+        h1 {
+            text-align: center;
+            color: #2c3e50;
+            border-bottom: 3px solid #3498db;
+            padding-bottom: 10px;
+        }
+
+        h2, h3 {
+            color: #34495e;
+            margin-top: 20px;
+        }
+
+        p {
+            font-size: 16px;
+            color: #555;
+            line-height: 1.6;
+        }
+
+        b {
+            color: #e74c3c;
+        }
+
+        i {
+            color: #8e44ad;
+        }
+
+        a {
+            text-decoration: none;
+            color: white;
+            background: #3498db;
+            padding: 5px 10px;
+            border-radius: 5px;
+        }
+
+        a:hover {
+            background: #2ecc71;
+        }
+
+        img {
+            display: block;
+            margin: 10px auto;
+            border-radius: 10px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+        }
+
+        ul, ol {
+            margin-left: 20px;
+            font-size: 15px;
+        }
+
+        li {
+            margin: 5px 0;
+        }
+
+        table {
+            width: 50%;
+            margin: 15px auto;
+            border-collapse: collapse;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+        }
+
+        th {
+            background: #3498db;
+            color: white;
+            padding: 10px;
+        }
+
+        td {
+            padding: 8px;
+            text-align: center;
+        }
+
+        tr:nth-child(even) {
+            background: #f2f2f2;
+        }
+
+        tr:hover {
+            background: #dff9fb;
+        }
+        .back-btn {
+    position: fixed;
+    bottom: 15px;
+    left: 15px;
+    background: #333;
+    color: white;
+    padding: 10px 15px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+/* Hover effect */
+.back-btn:hover {
+    background: red;
+}
+
+
+    </style>
+
+</head>
+
+<body>
+
+<div class="container">
+
+    <!-- Headings -->
+    <h1>HTML Headings Example</h1>
+    <h2>Heading Level 2</h2>
+    <h3>Heading Level 3</h3>
+
+    <!-- Paragraph -->
+    <p>This is a paragraph demonstrating the use of the &lt;p&gt; tag. Paragraphs are used to display text content on a webpage.</p>
+
+    <!-- Bold and Italic -->
+    <p><b>This text is bold.</b></p>
+    <p><i>This text is italic.</i></p>
+
+    <!-- Link -->
+    <p>Click here to visit 
+        <a href="https://www.w3schools.com" target="_blank">W3Schools</a>
+    </p>
+
+    <!-- Image -->
+    <h3>HTML Image Example</h3>
+    <img src="https://www.w3schools.com/html/pic_mountain.jpg" alt="Mountain" width="300" height="200">
+
+    <!-- Ordered List -->
+    <h3>Ordered List Example</h3>
+    <ol>
+        <li>HTML</li>
+        <li>CSS</li>
+        <li>JavaScript</li>
+    </ol>
+
+    <!-- Unordered List -->
+    <h3>Unordered List Example</h3>
+    <ul>
+        <li>Apple</li>
+        <li>Banana</li>
+        <li>Mango</li>
+    </ul>
+
+    <!-- Nested List -->
+    <h3>Nested List Example</h3>
+    <ol>
+        <li>Frontend
+            <ul>
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>JavaScript</li>
+            </ul>
+        </li>
+        <li>Backend
+            <ul>
+                <li>Java</li>
+                <li>Python</li>
+            </ul>
+        </li>
+    </ol>
+
+    <!-- Table -->
+    <h3>Table Example</h3>
+    <table>
+        <tr>
+            <th>Subject</th>
+            <th>Marks</th>
+        </tr>
+        <tr>
+            <td>Math</td>
+            <td>95</td>
+        </tr>
+        <tr>
+            <td>Physics</td>
+            <td>90</td>
+        </tr>
+    </table>
+
+</div>
+<a href="index.html" class="back-btn">← Back</a>
+</body>
+</html>

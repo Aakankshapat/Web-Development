@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>HTML Lists with CSS</title>
+
+    <style>
+        body {
+            font-family: Arial;
+            background-color: #f4f4f4;
+            padding: 20px;
+        }
+
+        h2 {
+            color: darkblue;
+        }
+
+        ul {
+            list-style-type: square;
+            background: #e6f2ff;
+            padding: 10px;
+        }
+
+        ol {
+            list-style-type: upper-roman;
+            background: #ffe6e6;
+            padding: 10px;
+        }
+
+        li {
+            margin: 5px;
+            color: darkgreen;
+        }
+
+        dl {
+            background: #e6ffe6;
+            padding: 10px;
+        }
+
+        dt {
+            font-weight: bold;
+            color: purple;
+        }
+
+        dd {
+            margin-left: 20px;
+            color: brown;
+        }
+        .back-btn {
+    position: fixed;
+    bottom: 15px;
+    left: 15px;
+    background: #333;
+    color: white;
+    padding: 10px 15px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+/* Hover effect */
+.back-btn:hover {
+    background: red;
+}
+    </style>
+
+</head>
+<body>
+
+<h2>Unordered List </h2>
+<ul>
+    <li>Apple</li>
+    <li>Banana</li>
+    <li>Mango</li>
+</ul>
+
+<h2>Ordered List </h2>
+<ol>
+    <li>HTML</li>
+    <li>CSS</li>
+    <li>JavaScript</li>
+</ol>
+
+<h2>Definition List </h2>
+<dl>
+    <dt>HTML</dt>
+    <dd>HyperText Markup Language</dd>
+
+    <dt>CSS</dt>
+    <dd>Cascading Style Sheets</dd>
+</dl>
+<a href="index.html" class="back-btn">← Back</a>
+</body>
+</html>

@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>HTML Formatting Tags</title>
+
+    <style>
+        body {
+            font-family: 'Segoe UI', sans-serif;
+            background: linear-gradient(to right, #ffecd2, #fcb69f);
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            width: 70%;
+            margin: 40px auto;
+            background: white;
+            padding: 30px;
+            border-radius: 12px;
+            box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+        }
+
+        h1 {
+            text-align: center;
+            color: #2c3e50;
+            border-bottom: 3px solid #e67e22;
+            padding-bottom: 10px;
+        }
+
+        p {
+            font-size: 17px;
+            margin: 12px 0;
+            padding: 10px;
+            border-left: 5px solid #3498db;
+            background: #f9f9f9;
+            border-radius: 6px;
+        }
+
+        b {
+            color: #e74c3c;
+        }
+
+        i {
+            color: #8e44ad;
+        }
+
+        u {
+            color: #2980b9;
+        }
+
+        s, del {
+            color: #7f8c8d;
+        }
+
+        mark {
+            background: #f1c40f;
+            padding: 2px 5px;
+            border-radius: 4px;
+        }
+
+        small {
+            color: #95a5a6;
+        }
+
+        ins {
+            color: #27ae60;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        sub, sup {
+            color: #d35400;
+            font-weight: bold;
+        }
+
+        p:hover {
+            background: #ecf0f1;
+            transform: scale(1.02);
+            transition: 0.3s;
+        }
+        .back-btn {
+    position: fixed;
+    bottom: 15px;
+    left: 15px;
+    background: #333;
+    color: white;
+    padding: 10px 15px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+/* Hover effect */
+.back-btn:hover {
+    background: red;
+}
+    </style>
+
+</head>
+
+<body>
+
+<div class="container">
+
+    <h1>HTML Formatting Tags Example</h1>
+
+    <!-- Bold Text -->
+    <p><b>This text is bold using &lt;b&gt; tag.</b></p>
+
+    <!-- Italic Text -->
+    <p><i>This text is italic using &lt;i&gt; tag.</i></p>
+
+    <!-- Underlined Text -->
+    <p><u>This text is underlined using &lt;u&gt; tag.</u></p>
+
+    <!-- Strikethrough / Deleted Text -->
+    <p><s>This text is struck through using &lt;s&gt; tag.</s></p>
+    <p><del>This text is deleted using &lt;del&gt; tag.</del></p>
+
+    <!-- Subscript Text -->
+    <p>Water formula: H<sub>2</sub>O (Subscript)</p>
+
+    <!-- Superscript Text -->
+    <p>Area of square: A = s<sup>2</sup> (Superscript)</p>
+
+    <!-- Highlighted Text -->
+    <p><mark>This text is highlighted using &lt;mark&gt; tag.</mark></p>
+
+    <!-- Small Text -->
+    <p><small>This is small text using &lt;small&gt; tag.</small></p>
+
+    <!-- Inserted Text -->
+    <p><ins>This text is inserted using &lt;ins&gt; tag.</ins></p>
+
+    <!-- Combined Formatting -->
+    <p><b><i>Bold and Italic Text together</i></b></p>
+    <p><u><i>Underline and Italic Text together</i></u></p>
+    <p><b><u>Bold and Underline Text together</u></b></p>
+
+</div>
+<a href="index.html" class="back-btn">← Back</a>
+</body>
+</html>

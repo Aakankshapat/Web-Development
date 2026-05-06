@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Hyperlink Example</title>
+
+<style>
+    body {
+        font-family: 'Segoe UI', sans-serif;
+        background: linear-gradient(to right, #a1c4fd, #c2e9fb);
+        margin: 0;
+        padding: 0;
+    }
+
+    .container {
+        width: 80%;
+        margin: 30px auto;
+        background: white;
+        padding: 25px;
+        border-radius: 12px;
+        box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+    }
+
+    h1 {
+        text-align: center;
+        color: #2c3e50;
+        border-bottom: 3px solid #3498db;
+        padding-bottom: 10px;
+    }
+
+    h2 {
+        color: #34495e;
+        margin-top: 20px;
+    }
+
+    p {
+        font-size: 16px;
+        color: #555;
+    }
+
+    a {
+        text-decoration: none;
+        color: white;
+        background: #3498db;
+        padding: 8px 15px;
+        border-radius: 6px;
+        display: inline-block;
+        margin-top: 5px;
+        transition: 0.3s;
+    }
+
+    a:hover {
+        background: #2ecc71;
+        transform: scale(1.05);
+    }
+
+    img {
+        display: block;
+        margin: 10px auto;
+        border-radius: 10px;
+        box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+        transition: 0.3s;
+    }
+
+    img:hover {
+        transform: scale(1.05);
+    }
+
+    hr {
+        margin: 25px 0;
+        border: none;
+        border-top: 2px solid #ddd;
+    }
+
+    .footer {
+        text-align: center;
+        margin-top: 20px;
+        font-weight: bold;
+        color: #555;
+    }
+    .back-btn {
+    position: fixed;
+    bottom: 15px;
+    left: 15px;
+    background: #333;
+    color: white;
+    padding: 10px 15px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+/* Hover effect */
+.back-btn:hover {
+    background: red;
+}
+</style>
+
+</head>
+
+<body>
+
+<div class="container">
+
+<h1>Study of Hyperlinks in HTML</h1>
+
+<!-- Text Link -->
+<h2>1. Text Link</h2>
+<p>Click the link below to visit Google:</p>
+
+<a href="https://www.google.com" target="_blank">
+    Visit Google
+</a>
+
+<hr>
+
+<!-- Image Link -->
+<h2>2. Image Link</h2>
+<p>Click the image to visit Wikipedia:</p>
+
+<a href="https://www.wikipedia.org" target="_blank">
+<img src="https://upload.wikimedia.org/wikipedia/commons/6/63/Wikipedia-logo.png"
+width="150" height="150" alt="Wikipedia">
+</a>
+
+<hr>
+
+<!-- Image Map -->
+<h2>3. Image Map</h2>
+<p>Click different areas of the image:</p>
+
+<img src="https://upload.wikimedia.org/wikipedia/commons/3/3f/HTML5_Logo_512.png"
+usemap="#htmlmap"
+width="300"
+alt="HTML Image Map">
+
+<map name="htmlmap">
+
+<area shape="circle"
+coords="150,150,80"
+href="https://developer.mozilla.org/en-US/docs/Web/HTML"
+target="_blank"
+alt="HTML Tutorial">
+
+<area shape="rect"
+coords="10,10,100,100"
+href="https://www.w3schools.com"
+target="_blank"
+alt="W3Schools">
+
+</map>
+
+<hr>
+
+<div class="footer">
+End of Hyperlink Demonstration
+</div>
+
+</div>
+<a href="index.html" class="back-btn">← Back</a>
+</body>
+</html>

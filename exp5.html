@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Assignment 5 - Image Attributes</title>
+
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Segoe UI', sans-serif;
+            background: linear-gradient(to right, #fdfbfb, #ebedee);
+        }
+
+        .container {
+            width: 85%;
+            margin: 30px auto;
+            background: white;
+            padding: 25px;
+            border-radius: 15px;
+            box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+        }
+
+        h1 {
+            text-align: center;
+            color: #2c3e50;
+            border-bottom: 3px solid #3498db;
+            padding-bottom: 10px;
+        }
+
+        .info {
+            margin-top: 15px;
+            font-size: 16px;
+            color: #444;
+            line-height: 1.6;
+        }
+
+        .content {
+            display: flex;
+            gap: 20px;
+            margin-top: 20px;
+            align-items: center;
+        }
+
+        .content img {
+            width: 600px;
+            height: 350px;
+            border-radius: 15px;
+            border: 5px solid darkblue;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+            transition: 0.3s;
+        }
+
+        .content img:hover {
+            transform: scale(1.05);
+        }
+
+        .text {
+            font-size: 17px;
+            color: #555;
+        }
+
+        .logo-section {
+            text-align: center;
+            margin-top: 40px;
+        }
+
+        .logo-section img {
+            width: 200px;
+            height: 100px;
+            border: 3px solid black;
+            border-radius: 10px;
+            transition: 0.3s;
+        }
+
+        .logo-section img:hover {
+            transform: scale(1.1);
+            border-color: #3498db;
+        }
+
+        .footer {
+            text-align: center;
+            margin-top: 30px;
+            padding: 10px;
+            background: #2c3e50;
+            color: white;
+            border-radius: 8px;
+        }
+
+        @media (max-width: 768px) {
+            .content {
+                flex-direction: column;
+            }
+
+            .content img {
+                width: 100%;
+                height: auto;
+            }
+        }
+        .back-btn {
+    position: fixed;
+    bottom: 15px;
+    left: 15px;
+    background: #333;
+    color: white;
+    padding: 10px 15px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+/* Hover effect */
+.back-btn:hover {
+    background: red;
+} 
+    </style>
+
+</head>
+
+<body>
+
+<div class="container">
+
+    <h1>D. Y. Patil College of Engineering & Technology, Kolhapur</h1>
+
+    <div class="info">
+        <b>Name:</b> Aakanksha Patil <br>
+        <b>Roll No:</b> 69 <br>
+        <b>Assignment No:</b> 5
+    </div>
+
+    <div class="content">
+        <img 
+            src="https://image-static.collegedunia.com/public/reviewPhotos/834756/IMG_3798.jpeg"
+            alt="DYPCET College Campus"
+            title="DYPCET Kolhapur Campus"
+        >
+
+        <div class="text">
+            This image shows the beautiful campus of  
+            <b>D. Y. Patil College of Engineering & Technology, Kolhapur (DYPCET)</b>.  
+            The college is known for its infrastructure, academic excellence, and modern facilities.
+        </div>
+    </div>
+
+    <!-- Clickable Image -->
+    <div class="logo-section">
+        <a href="https://coek.dypgroup.edu.in/" target="_blank">
+            <img 
+                src="https://www.dypcet.ac.in/assets/images/logo.png"
+                alt="Click to Visit DYPCET Website"
+                title="Click to visit DYPCET Official Website"
+            >
+        </a>
+        <p>Click the logo to visit official website</p>
+    </div>
+
+    <div class="footer">
+        Web Technology Assignment
+    </div>
+
+</div>
+<a href="index.html" class="back-btn">← Back</a>
+</body>
+</html>

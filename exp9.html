@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Employee Form</title>
+
+    <style>
+        body {
+            font-family: 'Segoe UI', sans-serif;
+            background: linear-gradient(to right, #74ebd5, #9face6);
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            width: 400px;
+            margin: 50px auto;
+            background: white;
+            padding: 25px;
+            border-radius: 12px;
+            box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+        }
+
+        h2 {
+            text-align: center;
+            color: #2c3e50;
+            margin-bottom: 20px;
+        }
+
+        label {
+            font-weight: bold;
+            color: #34495e;
+        }
+
+        input, select {
+            width: 100%;
+            padding: 8px;
+            margin-top: 5px;
+            margin-bottom: 15px;
+            border-radius: 6px;
+            border: 1px solid #ccc;
+            outline: none;
+        }
+
+        input:focus, select:focus {
+            border-color: #3498db;
+        }
+
+        .skills {
+            margin-bottom: 15px;
+        }
+
+        .skills input {
+            width: auto;
+            margin-right: 5px;
+        }
+
+        .skills label {
+            margin-right: 10px;
+            font-weight: normal;
+        }
+
+        .btn {
+            width: 100%;
+            padding: 10px;
+            background: #3498db;
+            color: white;
+            border: none;
+            border-radius: 6px;
+            font-size: 16px;
+            cursor: pointer;
+            transition: 0.3s;
+        }
+
+        .btn:hover {
+            background: #2ecc71;
+        }
+        .back-btn {
+    position: fixed;
+    bottom: 15px;
+    left: 15px;
+    background: #333;
+    color: white;
+    padding: 10px 15px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+/* Hover effect */
+.back-btn:hover {
+    background: red;
+}
+    </style>
+
+</head>
+
+<body>
+
+<div class="container">
+
+<h2>Employee Registration Form</h2>
+
+<form>
+    
+    <label>Employee Name:</label>
+    <input type="text" required>
+
+    <label>Employee ID:</label>
+    <input type="text" required>
+
+    <label>Department:</label>
+    <select>
+        <option>HR</option>
+        <option>IT</option>
+        <option>Finance</option>
+    </select>
+
+    <label>Salary:</label>
+    <input type="number">
+
+    <label>Date of Joining:</label>
+    <input type="date">
+
+    <label>Skills:</label>
+    <div class="skills">
+        <input type="checkbox"> <label>Java</label>
+        <input type="checkbox"> <label>Python</label>
+        <input type="checkbox"> <label>HTML</label>
+    </div>
+
+    <input type="submit" value="Submit" class="btn">
+
+</form>
+
+</div>
+<a href="index.html" class="back-btn">← Back</a>
+</body>
+</html>

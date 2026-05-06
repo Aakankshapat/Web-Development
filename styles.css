@@ -1,0 +1,89 @@
+/* Google-like modern reset */
+* {
+    box-sizing: border-box;
+}
+
+/* Body background */
+body {
+    margin: 0;
+    font-family: 'Segoe UI', Tahoma, sans-serif;
+    background: linear-gradient(135deg, #667eea, #764ba2);
+    min-height: 100vh;
+}
+
+/* Headings */
+h1 {
+    margin-top: 30px;
+    color: #ffffff;
+    letter-spacing: 1px;
+}
+
+h3 {
+    color: #e0e0e0;
+    margin-bottom: 20px;
+}
+
+/* Table container */
+table {
+    width: 85%;
+    margin: auto;
+    background: rgba(255, 255, 255, 0.95);
+    border-collapse: collapse;
+    border-radius: 14px;
+    overflow: hidden;
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.25);
+}
+
+/* Header row */
+th {
+    background: linear-gradient(135deg, #4facfe, #00f2fe);
+    color: white;
+    padding: 14px;
+    font-size: 16px;
+    text-transform: uppercase;
+}
+
+/* Table cells */
+td {
+    padding: 12px;
+    text-align: center;
+    font-size: 15px;
+    color: #333;
+}
+
+/* Zebra rows */
+tr:nth-child(even) {
+    background-color: #f7f9fc;
+}
+
+/* Hover effect */
+tr:hover {
+    background-color: #eef4ff;
+    transition: 0.3s ease;
+}
+
+/* Links as buttons */
+a {
+    text-decoration: none;
+    padding: 7px 16px;
+    border-radius: 20px;
+    font-size: 14px;
+    font-weight: 500;
+    background: linear-gradient(135deg, #43e97b, #38f9d7);
+    color: #003333;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15);
+    transition: all 0.3s ease;
+}
+
+/* Button hover */
+a:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 10px 22px rgba(0, 0, 0, 0.25);
+}
+
+/* Footer */
+.footer {
+    color: #ffffff;
+    font-size: 14px;
+    margin-bottom: 30px;
+}

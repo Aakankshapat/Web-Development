@@ -1,0 +1,40 @@
+students {
+    display: block;
+    font-family: Arial;
+    background: #f4f4f4;
+    padding: 10px;
+}
+
+student {
+    display: block;
+    background: white;
+    margin: 10px;
+    padding: 10px;
+    border: 1px solid gray;
+}
+
+name {
+    display: block;
+    color: blue;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+rollno, course, city {
+    display: block;
+    color: darkgreen;
+}
+
+.back-btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background: #3498db;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    margin: 20px;
+}
+
+.back-btn:hover {
+    background: #2980b9;
+}

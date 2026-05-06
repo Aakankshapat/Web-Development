@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- XML Study and Implementation Assignment -->
+<!-- This XML document demonstrates various XML features for educational purposes -->
+
+<!-- Processing Instruction: Links to CSS stylesheet for styling -->
+<?xml-stylesheet type="text/css" href="style.css"?>
+
+<!-- Document Type Definition (DTD) for validation -->
+<!DOCTYPE students [
+<!ELEMENT students (student+)>
+<!ELEMENT student (name, rollno, course, city, email?, phone?)>
+<!ELEMENT name (#PCDATA)>
+<!ELEMENT rollno (#PCDATA)>
+<!ELEMENT course (#PCDATA)>
+<!ELEMENT city (#PCDATA)>
+<!ELEMENT email (#PCDATA)>
+<!ELEMENT phone (#PCDATA)>
+<!ATTLIST student id ID #REQUIRED>
+<!ATTLIST student status (active|inactive) "active">
+<!ATTLIST email type (personal|academic) "personal">
+]>
+
+<!-- Root element: students -->
+<students>
+
+    <!-- Comment: First student record -->
+    <student id="s101" status="active">
+        <name>Aakanksha Patil</name>
+        <rollno>101</rollno>
+        <course>Computer Science</course>
+        <city>Pune</city>
+        <email type="academic">aakanksha.patil@university.edu</email>
+        <phone>+91-9876543210</phone>
+    </student>
+
+    <!-- Second student with minimal required elements -->
+    <student id="s102" status="active">
+        <name>Rahul Sharma</name>
+        <rollno>102</rollno>
+        <course>Information Technology</course>
+        <city>Mumbai</city>
+    </student>
+
+    <!-- Third student with all elements -->
+    <student id="s103" status="inactive">
+        <name>Priya Singh</name>
+        <rollno>103</rollno>
+        <course>Mechanical Engineering</course>
+        <city>Delhi</city>
+        <email type="personal">priya.singh@email.com</email>
+        <phone>+91-8765432109</phone>
+    </student>
+
+    <!-- Fourth student demonstrating optional elements -->
+    <student id="s104" status="active">
+        <name>Vikram Kumar</name>
+        <rollno>104</rollno>
+        <course>Electrical Engineering</course>
+        <city>Bangalore</city>
+        <email>Vikram.Kumar@engg.edu</email>
+    </student>
+
+</students>
+
+<!-- Note: This XML demonstrates:
+1. XML Declaration with version and encoding
+2. Processing Instructions (xml-stylesheet)
+3. Comments for documentation
+4. Document Type Definition (DTD) with elements and attributes
+5. Namespaces (xmlns attributes)
+6. Schema location hint
+7. Elements with mixed content (though here all PCDATA)
+8. Attributes (id, status, type)
+9. Optional elements (email?, phone?)
+10. Well-formed structure with proper nesting
+11. Character encoding (UTF-8)
+-->
+
+<!-- End of XML Study Document -->
+
+    
